@@ -4,9 +4,9 @@ module.exports = {
   content: ["*.{html,js}"],
   theme: {
     extend: {
-      fontFamily:{
-        body:['compact']
-      }
+      fontFamily: {
+        body: ["Poppins"],
+      },
     },
   },
   plugins: [],
