@@ -14,38 +14,74 @@
   </head>
   <body>
     <!--notification-->
-    <div class="flex justify-between h-16">
-      <h1 class="text-3xl font-bold">Notifications</h1>
-      <div>
-        <img src="../img/foto.jpg" alt="fotonya" class="w-8 h-8" />
+    <div class="border border-slate-200">
+      <div class="flex justify-between h-16">
+        <h1 class="text-3xl font-bold">Notifications</h1>
+        <div>
+          <img src="../img/setting.svg" alt="fotonya" class="w-8 h-8" />
+        </div>
+      </div>
+
+      <!--navBar-->
+      <div class="flex justify-center">
+        <button class="grow p-4 text-center font-bold text-[#536471]">
+          All
+        </button>
+        <button class="grow p-4 text-center font-bold text-[#536471]">
+          Verified
+        </button>
+        <button class="grow p-4 text-center font-bold text-[#536471]">
+          Mentions
+        </button>
       </div>
     </div>
 
-    <!--navBar-->
-    <div class="flex justify-center">
-      <button class="grow p-4 text-center">All</button>
-      <button class="grow p-4 text-center">Verified</button>
-      <button class="grow p-4 text-center">Mentions</button>
-    </div>
-
-    <!--line hunt-->
+    <!--liked post-->
     <article>
-      <div>
-        <img src="../img/foto.jpg" class="w-8 h-8 rounded-full" />
-        <p class="font-bold">hanyur</p>
+      <div class="flex justify-start border border-slate-200">
+        <img src="../img/heart.svg" class="w-8 h-8 rounded-full" />
+        <div>
+          <img src="../img/pp1.jpg" class="w-8 h-8 rounded-full" />
+          <p><b>Hanyur</b> liked your post</p>
+          <p class="line-clamp-3 justify-around">lagi trial nih</p>
+        </div>
       </div>
-      <p class="line-clamp-3 justify-around">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, animi.
-      </p>
     </article>
+
+    <!-- following -->
     <article>
-      <div>
-        <img src="../img/foto.jpg" class="w-8 h-8 rounded-full" />
-        <p class="font-bold">hanyur</p>
+      <div class="flex justify-start border border-slate-200">
+        <img src="../img/user.png" class="w-8 h-8 rounded-full" />
+        <div>
+          <img src="../img/pp2.jpg" class="w-8 h-8 rounded-full" />
+          <p><b>Danu</b> followed you</p>
+        </div>
       </div>
-      <p class="line-clamp-3 justify-around">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, animi.
-      </p>
+    </article>
+
+    <!-- replying to -->
+    <article>
+      <div class="border border-slate-200">
+        <div class="flex justify-between">
+          <div class="flex justify-start">
+            <img src="../img/user.png" class="w-8 h-8 rounded-full" />
+            <div>
+              <img src="../img/pp1.jpg" class="w-8 h-8 rounded-full" />
+              <p><b>Hanyur</b> @hanyur_optic</p>
+              <p>Replying to @RestaAgeng</p>
+              <p>aman ga?</p>
+            </div>
+          </div>
+          <img src="../img/3dots.svg" class="w-8 h-8 rounded-full" />
+        </div>
+        <div class="flex justify-between mx-8">
+          <img src="../img/reply.svg" class="w-4 h-4"/>
+          <img src="../img/retweet.svg" class="w-4 h-4"/>
+          <img src="../img/heart.svg" class="w-4 h-4"/>
+          <img src="../img/stats.svg" class="w-4 h-4"/>
+          <img src="../img/share.svg" class="w-4 h-4"/>
+        </div>
+      </div>
     </article>
   </body>
 </html>
