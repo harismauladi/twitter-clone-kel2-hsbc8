@@ -540,6 +540,10 @@ video {
   pointer-events: none;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .invisible{
   visibility: hidden;
 }
@@ -558,10 +562,6 @@ video {
 
 .sticky{
   position: sticky;
-}
-
-.bottom-0{
-  bottom: 0px;
 }
 
 .bottom-20{
@@ -596,40 +596,8 @@ video {
   top: 0.75rem;
 }
 
-.top-\[29px\]{
-  top: 29px;
-}
-
-.top-\[102px\]{
-  top: 102px;
-}
-
-.top-\[350px\]{
-  top: 350px;
-}
-
-.top-\[300px\]{
-  top: 300px;
-}
-
-.top-\[370px\]{
-  top: 370px;
-}
-
-.top-\[270px\]{
-  top: 270px;
-}
-
-.top-\[220px\]{
-  top: 220px;
-}
-
-.top-10{
-  top: 2.5rem;
-}
-
-.top-44{
-  top: 11rem;
+.bottom-0{
+  bottom: 0px;
 }
 
 .top-32{
@@ -648,16 +616,16 @@ video {
   grid-column: span 12 / span 12;
 }
 
+.col-span-9{
+  grid-column: span 9 / span 9;
+}
+
 .m-0{
   margin: 0px;
 }
 
 .m-auto{
   margin: auto;
-}
-
-.m-6{
-  margin: 1.5rem;
 }
 
 .mx-1{
@@ -683,11 +651,6 @@ video {
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
-}
-
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .mx-\[10px\]{
@@ -718,6 +681,11 @@ video {
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mb-1{
@@ -794,6 +762,10 @@ video {
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-3{
@@ -915,10 +887,6 @@ video {
   height: 100vh;
 }
 
-.h-28{
-  height: 7rem;
-}
-
 .max-h-\[10rem\]{
   max-height: 10rem;
 }
@@ -1015,6 +983,10 @@ video {
   width: 300px;
 }
 
+.w-\[348px\]{
+  width: 348px;
+}
+
 .w-\[350px\]{
   width: 350px;
 }
@@ -1073,6 +1045,10 @@ video {
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-\[15rem\]{
+  max-width: 15rem;
 }
 
 .flex-grow{
@@ -1181,12 +1157,20 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
 .overflow-x-hidden{
   overflow-x: hidden;
 }
 
 .overflow-y-hidden{
   overflow-y: hidden;
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll;
 }
 
 .truncate{
@@ -1414,6 +1398,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/img\/background\.png\'\)\]{
+  background-image: url('./img/background.png');
+}
+
 .from-orange-500{
   --tw-gradient-from: #f97316 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
@@ -1566,10 +1554,6 @@ video {
   padding-left: 0.5rem;
 }
 
-.pl-4{
-  padding-left: 1rem;
-}
-
 .pl-5{
   padding-left: 1.25rem;
 }
@@ -1600,6 +1584,10 @@ video {
 
 .pt-3{
   padding-top: 0.75rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-center{
@@ -1866,6 +1854,17 @@ video {
 
 /* Chrome, Safari and Opera */
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 .focus-within\:text-blue-600:focus-within{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -2005,6 +2004,12 @@ video {
   stroke: #0284c7;
 }
 
+@media (max-width: 1023px){
+  .max-\[1023px\]\:min-w-\[50rem\]{
+    min-width: 50rem;
+  }
+}
+
 @media (max-width: 1020px){
   .max-\[1020px\]\:min-w-\[50rem\]{
     min-width: 50rem;
@@ -2024,10 +2029,6 @@ video {
     position: static;
   }
 
-  .md\:top-44{
-    top: 11rem;
-  }
-
   .md\:top-64{
     top: 16rem;
   }
@@ -2036,12 +2037,12 @@ video {
     grid-column: span 10 / span 10;
   }
 
-  .md\:col-span-12{
-    grid-column: span 12 / span 12;
-  }
-
   .md\:col-span-2{
     grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-12{
+    grid-column: span 12 / span 12;
   }
 
   .md\:hidden{
@@ -2111,12 +2112,36 @@ video {
     grid-column: span 7 / span 7;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:hidden{
     display: none;
   }
 
   .lg\:min-w-\[40rem\]{
     min-width: 40rem;
+  }
+
+  .lg\:min-w-\[35rem\]{
+    min-width: 35rem;
+  }
+
+  .lg\:min-w-\[34rem\]{
+    min-width: 34rem;
+  }
+
+  .lg\:min-w-\[30rem\]{
+    min-width: 30rem;
+  }
+
+  .lg\:min-w-\[33rem\]{
+    min-width: 33rem;
+  }
+
+  .lg\:min-w-\[33\.5rem\]{
+    min-width: 33.5rem;
   }
 
   .lg\:justify-end{
@@ -2163,6 +2188,14 @@ video {
 
   .xl\:w-72{
     width: 18rem;
+  }
+
+  .xl\:min-w-\[45rem\]{
+    min-width: 45rem;
+  }
+
+  .xl\:min-w-\[40rem\]{
+    min-width: 40rem;
   }
 
   .xl\:justify-start{
